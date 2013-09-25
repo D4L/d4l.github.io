@@ -29,6 +29,7 @@ task :deploy do
   end
   `cp -r _site/* #{tempfile}`
 
+  print "Remove contents of master\n"
   if !system(%{git checkout master >/dev/null 2>&1})
     print "Cannot checkout to master\n"
     `rm -r #{tempfile}`
@@ -42,12 +43,32 @@ task :deploy do
     `rm -r #{tempfile}`
     exit
   end
-  `cp -r #{tempfile}/* .`
+
+  if system(%{cp -r #{tempfile}/* .})
+    print "Copied over contents from temp\n"
+  else
+    print "Cannot copy over contents from temp\n"
+    `rm -r #{tempfile}`
+    exit
+  end
 
   message = "Updated built site from develop - #{sha_hash}"
   `git add .`
-  `git commit -m "#{message}" >/dev/null 2>&1`
-  `git push origin master >/dev/null 2>&1`
+  if system(%{git commit -m "#{message}" >/dev/null 2>&1})
+    print "Commited!\n"
+  else
+    print "Cannot commit the site"
+    `rm -r #{tempfile}`
+    exit
+  end
+
+  if system(%{git push origin master >/dev/null 2>&1})
+    print "Pushed site!\n"
+  else
+    print "Cannot push site"
+    `rm -r #{tempfile}`
+    exit
+  end
   `git checkout develop >/dev/null 2>&1`
 
   `rm -r #{tempfile}`
