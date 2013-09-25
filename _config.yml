@@ -1,3 +1,4 @@
 name: Austin Lee
 markdown: redcarpet
 pygments: true
+exclude: [Rakefile, Gemfile.lock, Gemfile]
