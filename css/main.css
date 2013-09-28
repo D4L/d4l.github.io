@@ -1,3 +1,20 @@
 body {
-  padding-top: 50px;
+  padding-top:        50px;
+}
+
+.jumbotron {
+  position:           relative;
+  margin-bottom:      0px;
+  z-index:            -2;
+}
+
+.jumbotron-background {
+  position:           absolute;
+  background-color:   #f671bb;
+  height:             100%;
+  width:              100%;
+  top:                0;
+  left:               0;
+  opacity:            0;
+  z-index:            -1;
 }

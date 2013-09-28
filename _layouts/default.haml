@@ -11,7 +11,7 @@
     %link{ :rel => "stylesheet", :href => "/css/font-awesome.min.css", :media => "screen" }
     %link{ :rel => "stylesheet", :href => "/css/main.css", :media => "screen" }
 
-  %body{ :data => { :spy => "scroll", :target => "#scroll-spy", :offset => "50" } }
+  %body{ :data => { :spy => "scroll", :target => "#scroll-spy", :offset => "150" } }
     .navbar.navbar-inverse.navbar-fixed-top{ :role => "navigation" }
       .container#scroll-spy
         .navbar-header
@@ -26,19 +26,19 @@
 
         .collapse.navbar-collapse.navbar-ex1-collapse
           %ul.nav.navbar-nav
-            %li.active
+            %li.active{ :data => { :activates => "#about-me" } }
               %a{ :href => "#about-me" }
                 About Me
-            %li
+            %li{ :data => { :activates => "#projects" } }
               %a{ :href => "#projects" }
                 Projects
-            %li
+            %li{ :data => { :activates => "#work-experience" } }
               %a{ :href => "#work-experience" }
                 Work Experience
-            %li
+            %li{ :data => { :activates => "#resume" } }
               %a{ :href => "#resume" }
                 Resume
-            %li
+            %li{ :data => { :activates => "#contact-me" } }
               %a{ :href => "#contact-me" }
                 Contact Me
 
@@ -48,3 +48,4 @@
 
     %script{ :src => "//code.jquery.com/jquery.js" }
     %script{ :src => "/js/bootstrap.min.js" }
+    %script{ :src => "/js/viewEvents.js" }
