@@ -1,10 +1,10 @@
 $(document).ready( function() {
   $("#scroll-spy").on('activate.bs.scrollspy', function(e) {
-    $(".jumbotron-background").animate({
-      opacity: 0
+    $(".jumbotron").animate({
+      backgroundColor: "#eee"
     }, 200);
-    $($(e.target).data("activates")).find(".jumbotron-background").animate( {
-      opacity: 1
+    $($(e.target).data("activates")).animate( {
+      backgroundColor: "#f671bb"
     }, 200);
   });
 });

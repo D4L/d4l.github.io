@@ -5,16 +5,15 @@ body {
 .jumbotron {
   position:           relative;
   margin-bottom:      0px;
-  z-index:            -2;
 }
 
-.jumbotron-background {
-  position:           absolute;
-  background-color:   #f671bb;
-  height:             100%;
-  width:              100%;
-  top:                0;
-  left:               0;
-  opacity:            0;
-  z-index:            -1;
+.icon-envelope {
+  font-size:          22px;
+}
+.icon-github {
+  font-size:          26px;
+}
+
+.contact-me-link {
+  margin-left:        5px;
 }
