@@ -7,7 +7,7 @@
     <link href='/css/font-awesome.min.css' media='screen' rel='stylesheet'>
     <link href='/css/main.css' media='screen' rel='stylesheet'>
   </head>
-  <body data-offset='50' data-spy='scroll' data-target='#scroll-spy'>
+  <body data-offset='150' data-spy='scroll' data-target='#scroll-spy'>
     <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
       <div class='container' id='scroll-spy'>
         <div class='navbar-header'>
@@ -25,27 +25,27 @@
         </div>
         <div class='collapse navbar-collapse navbar-ex1-collapse'>
           <ul class='nav navbar-nav'>
-            <li class='active'>
+            <li class='active' data-activates='#about-me'>
               <a href='#about-me'>
                 About Me
               </a>
             </li>
-            <li>
+            <li data-activates='#projects'>
               <a href='#projects'>
                 Projects
               </a>
             </li>
-            <li>
+            <li data-activates='#work-experience'>
               <a href='#work-experience'>
                 Work Experience
               </a>
             </li>
-            <li>
+            <li data-activates='#resume'>
               <a href='#resume'>
                 Resume
               </a>
             </li>
-            <li>
+            <li data-activates='#contact-me'>
               <a href='#contact-me'>
                 Contact Me
               </a>
@@ -65,6 +65,7 @@
   </div>
 </div>
 <div class='jumbotron' id='about-me'>
+  <div class='jumbotron-background'></div>
   <div class='container'>
     <h1>
       About Me
@@ -72,6 +73,7 @@
   </div>
 </div>
 <div class='jumbotron' id='projects'>
+  <div class='jumbotron-background'></div>
   <div class='container'>
     <h1>
       Projects
@@ -79,6 +81,7 @@
   </div>
 </div>
 <div class='jumbotron' id='work-experience'>
+  <div class='jumbotron-background'></div>
   <div class='container'>
     <h1>
       Work Experience
@@ -86,6 +89,7 @@
   </div>
 </div>
 <div class='jumbotron' id='resume'>
+  <div class='jumbotron-background'></div>
   <div class='container'>
     <h1>
       Resume
@@ -93,6 +97,7 @@
   </div>
 </div>
 <div class='jumbotron' id='contact-me'>
+  <div class='jumbotron-background'></div>
   <div class='container'>
     <h1>
       Contact Me
@@ -114,5 +119,6 @@
     <div class='footer'></div>
     <script src='//code.jquery.com/jquery.js'></script>
     <script src='/js/bootstrap.min.js'></script>
+    <script src='/js/viewEvents.js'></script>
   </body>
 </html>
