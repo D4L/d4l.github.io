@@ -5,6 +5,7 @@ body {
 .jumbotron {
   position:           relative;
   margin-bottom:      0px;
+  border-bottom:      #bcbcbc 2px dotted;
 }
 
 .icon-envelope {
