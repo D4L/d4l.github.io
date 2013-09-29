@@ -15,10 +15,54 @@ title: My Portfolio
   .container
     %h1
       About Me
+
+    .row
+      .col-md-7
+        %p
+          I am studying
+          %span.large
+            Software Engineering
+          at the
+          %span.large
+            University of Waterloo.
+          I, like Science Boy, have a superhuman thirst for knowledge.
+          Luckily, my endless passion never goes unfulfilled as I spend my spare time learning about the world around me.
+          I also enjoy well-written code and proofs.
+      .col-md-5
+        %h2
+          Skills
+        %h3
+          Languages
+        == {% progress_bar Ruby/Rails 100 %}
+        == {% progress_bar C++ 95 %}
+        == {% progress_bar Javascript/JQuery 95 %}
+        == {% progress_bar SQL 90 %}
+        %h3
+          Other
+        == {% progress_bar Git 100 %}
+        == {% progress_bar Unix 80 %}
+        == {% progress_bar Problem Solving 93 %}
+        == {% progress_bar Quick Learner 100 %}
+
 .jumbotron#projects
   .container
     %h1
       Projects
+    .carousel.slide#project-carousel
+      %ol.carousel-indicators
+        %li.active{ :data => { :target => "project-carousel", "slide-to" => "0" } }
+        %li{ :data => { :target => "project-carousel", "slide-to" => "1" } }
+      .carousel-inner
+        .item.active
+          .carousel-caption
+            Item 1
+        .item
+          .carousel-caption
+            Item 2
+      %a.left.carousel-control{ :href => "#project-carousel", :data => { :slide => "prev" } }
+        %span.glyphicon.glyphicon-chevron-left
+      %a.right.carousel-control{ :href => "#project-carousel", :data => { :slide => "next" } }
+        %span.glyphicon.glyphicon-chevron-right
 .jumbotron#work-experience
   .container
     %h1
