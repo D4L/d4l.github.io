@@ -5,6 +5,7 @@ body {
 .jumbotron {
   position:           relative;
   margin-bottom:      0px;
+  border-bottom:      #bcbcbc 2px dotted;
 }
 
 .icon-envelope {
@@ -16,4 +17,35 @@ body {
 
 .contact-me-link {
   margin-left:        5px;
+}
+
+.large {
+  font-size:          30px;
+  letter-spacing:     -1px;
+}
+
+.progress {
+  height:             30px;
+}
+
+.progress-bar {
+  background-color:   #383838;
+}
+
+.progress-label {
+  text-align:         left;
+  font-size:          21px;
+  line-height:        30px;
+  margin-left:        10px;
+  color:              #f671bb;
+  font-weight:        bold;
+}
+
+.item {
+  height:             500px;
+  width:              100%;
+}
+
+#hello {
+  background-color:   #f671bb;
 }
