@@ -122,6 +122,26 @@ title: My Portfolio
   .container
     %h1
       Resume
+    %p
+      Yay! You made it this far.
+      %ul
+        %li
+          Are you looking for a short summary of my career?
+        %li
+          Are you wondering what other skills I have?
+        %li
+          or Are you searching for a document that you can show your boss and exclaim, "I want him!"
+      Look no further, this document is for you!
+      %br/
+      %a.btn.btn-primary{ :href => "pdf/Resume.pdf" }
+        %i.icon-file
+        Resume
+      %br/
+      Or download and save onto your computer.
+      %br/
+      %a.btn.btn-primary{ :href => "pdf/Resume.pdf", :download => "Resume.pdf"}
+        %i.icon-download-alt
+        Download me
 .jumbotron#contact-me
   .container
     %h1
