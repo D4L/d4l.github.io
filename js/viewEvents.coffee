@@ -2,6 +2,8 @@
 ---
 
 $ ->
+  prettyPrint()
+
   $("#scroll-spy").on 'activate.bs.scrollspy', (e) ->
     $(".jumbotron").animate
       backgroundColor: "#eee"

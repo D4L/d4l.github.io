@@ -10,6 +10,7 @@
     %link{ :rel => "stylesheet", :href => "/css/bootstrap.min.css", :media => "screen" }
     %link{ :rel => "stylesheet", :href => "/css/font-awesome.min.css", :media => "screen" }
     %link{ :rel => "stylesheet", :href => "/css/main.css", :media => "screen" }
+    %link{ :rel => "stylesheet", :href => "/css/prettify.css", :type => "text/css" }
 
   %body{ :data => { :spy => "scroll", :target => "#scroll-spy", :offset => "150" } }
     .navbar.navbar-inverse.navbar-fixed-top{ :role => "navigation" }
@@ -44,9 +45,15 @@
 
     == {{ content }}
 
-    .footer
+    #footer.navbar-inverse
+      .container
+        %p.text-center
+          Designed and Implemented by Austin Lee.
+          %br/
+          Copyright © 2013
 
     %script{ :src => "//code.jquery.com/jquery.js" }
     %script{ :src => "/js/jquery.color.min.js" }
     %script{ :src => "/js/bootstrap.min.js" }
     %script{ :src => "/js/viewEvents.js" }
+    %script{ :src => "/js/prettify.js", :type => "text/javascript" }

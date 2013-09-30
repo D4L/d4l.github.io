@@ -2,6 +2,10 @@ body {
   padding-top:        50px;
 }
 
+.navbar-inverse {
+  color:              #999;
+}
+
 .jumbotron {
   position:           relative;
   margin-bottom:      0px;
@@ -48,4 +52,8 @@ body {
 
 #hello {
   background-color:   #f671bb;
+}
+
+#footer {
+  padding:            40px;
 }

@@ -6,10 +6,31 @@ title: My Portfolio
 .jumbotron#hello
   .container
     %h1
-      Hello and Welcome to my Site
+      99 lines of code on the wall
     %p
-      Super cool construction is going on. The progress and the source of the
-      site can be tracked on the
+      Hello, my name is Austin Lee. Firstly, let me finish that song...
+    %pre.prettyprint.linenums
+      :preserve
+        linesOutput = -&gt; ( num, wall: true ) do
+          wallOutput = if wall
+                         " on the wall"
+                       end
+          "#&#123;num&#125; line#&#123; num != 1 ? 's' : '' &#125; of code#&#123;wallOutput&#125;"
+        end
+
+        99.downto(1).each do &#124;numOfLines&#124;
+          puts linesOutput[numOfLines]
+          puts linesOutput[numOfLines, wall: false]
+          puts "Take one down, refactor around!"
+          if numOfLines > 1
+            puts linesOutput[numOfLines - 1]
+          else
+            puts "No more lines of code on the wall!"
+          end
+        end
+    %p
+      There is some construction going on.
+      The progress and the source of the site can be tracked on the
       <a href="https://github.com/D4L" target="_blank" >Github Page</a>. Please enjoy your stay.
 .jumbotron#about-me
   .container
