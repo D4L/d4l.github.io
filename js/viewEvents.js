@@ -1,5 +1,6 @@
 (function() {
   $(function() {
+    prettyPrint();
     return $("#scroll-spy").on('activate.bs.scrollspy', function(e) {
       $(".jumbotron").animate({
         backgroundColor: "#eee"

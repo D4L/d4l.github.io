@@ -6,6 +6,7 @@
     <link href='/css/bootstrap.min.css' media='screen' rel='stylesheet'>
     <link href='/css/font-awesome.min.css' media='screen' rel='stylesheet'>
     <link href='/css/main.css' media='screen' rel='stylesheet'>
+    <link href='/css/prettify.css' rel='stylesheet' type='text/css'>
   </head>
   <body data-offset='150' data-spy='scroll' data-target='#scroll-spy'>
     <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
@@ -57,11 +58,15 @@
     <div class='jumbotron' id='hello'>
   <div class='container'>
     <h1>
-      Hello and Welcome to my Site
+      99 lines of code on the wall
     </h1>
     <p>
-      Super cool construction is going on. The progress and the source of the
-      site can be tracked on the
+      Hello, my name is Austin Lee. Firstly, let me finish that song...
+    </p>
+    <pre class='prettyprint linenums'>linesOutput = -&gt; ( num, wall: true ) do&#x000A;  wallOutput = if wall&#x000A;                 " on the wall"&#x000A;               end&#x000A;  "#&#123;num&#125; line#&#123; num != 1 ? 's' : '' &#125; of code#&#123;wallOutput&#125;"&#x000A;end&#x000A;&#x000A;99.downto(1).each do &#124;numOfLines&#124;&#x000A;  puts linesOutput[numOfLines]&#x000A;  puts linesOutput[numOfLines, wall: false]&#x000A;  puts "Take one down, refactor around!"&#x000A;  if numOfLines > 1&#x000A;    puts linesOutput[numOfLines - 1]&#x000A;  else&#x000A;    puts "No more lines of code on the wall!"&#x000A;  end&#x000A;end</pre>
+    <p>
+      There is some construction going on.
+      The progress and the source of the site can be tracked on the
       <a href="https://github.com/D4L" target="_blank" >Github Page</a>. Please enjoy your stay.
     </p>
   </div>
@@ -82,9 +87,48 @@
           <span class='large'>
             University of Waterloo.
           </span>
-          I, like Science Boy, have a superhuman thirst for knowledge.
-          Luckily, my endless passion never goes unfulfilled as I spend my spare time learning about the world around me.
-          I also enjoy well-written code and proofs.
+          I, like Ross Geller's Science Boy, have a superhuman thirst for
+          <span class='large'>
+            knowledge.
+          </span>
+          Luckily, my endless passion never goes unfulfilled as I spend my spare time
+          <span class='large'>
+            learning
+          </span>
+          about the world around me.
+          I also enjoy well-written
+          <span class='large'>
+            code
+          </span>
+          and good designs.
+        </p>
+        <p>
+          My greatest strength is how fast I learn and can
+          <span class='large'>
+            adapt to a problem.
+          </span>
+          I have a strong foundation in many of the core programming paradigms and it helps me
+          <span class='large'>
+            understand
+          </span>
+          difficult concepts
+          <span class='large'>
+            easily.
+          </span>
+        </p>
+        <blockquote>
+          <p>
+            The only way to win is to learn faster than anyone else.
+          </p>
+          <small>
+            Eric Ries in
+            <cite title="The Learn Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses">
+              The Lean Startup
+            </cite>
+          </small>
+        </blockquote>
+        <p>
+          Deploy first, code later. But refined. And thought through.
         </p>
       </div>
       <div class='col-md-5'>
@@ -175,10 +219,19 @@
   </div>
 </div>
 
-    <div class='footer'></div>
+    <div class='navbar-inverse' id='footer'>
+      <div class='container'>
+        <div class='text-center'>
+          Designed and Implemented by Austin Lee.
+          <br>
+          Copyright © 2013
+        </div>
+      </div>
+    </div>
     <script src='//code.jquery.com/jquery.js'></script>
     <script src='/js/jquery.color.min.js'></script>
     <script src='/js/bootstrap.min.js'></script>
     <script src='/js/viewEvents.js'></script>
+    <script src='/js/prettify.js' type='text/javascript'></script>
   </body>
 </html>
