@@ -100,14 +100,16 @@ title: My Portfolio
     .carousel.slide#project-carousel
       %ol.carousel-indicators
         %li.active{ :data => { :target => "project-carousel", "slide-to" => "0" } }
-        %li{ :data => { :target => "project-carousel", "slide-to" => "1" } }
       .carousel-inner
         .item.active
+          %img{ :src => "img/hippocampus-screenshot.png", :alt => "Hippocampus App", :style => "opacity: 0.7;" }
           .carousel-caption
-            Item 1
-        .item
-          .carousel-caption
-            Item 2
+            %h1
+              Hippocampus
+            %p
+              This application was written using the new Javascript framework Meteor to help me/users study.
+              %br/
+              Click <a class="btn btn-primary" href="http://hippocampus.meteor.com" target="_blank" >here</a> to check it out!
       %a.left.carousel-control{ :href => "#project-carousel", :data => { :slide => "prev" } }
         %span.glyphicon.glyphicon-chevron-left
       %a.right.carousel-control{ :href => "#project-carousel", :data => { :slide => "next" } }
