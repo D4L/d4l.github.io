@@ -100,6 +100,7 @@ title: My Portfolio
     .carousel.slide#project-carousel
       %ol.carousel-indicators
         %li.active{ :data => { :target => "project-carousel", "slide-to" => "0" } }
+        %li{ :data => { :target => "project-carousel", "slide-to" => "1" } }
       .carousel-inner
         .item.active
           %img{ :src => "img/hippocampus-screenshot.png", :alt => "Hippocampus App" }
@@ -110,6 +111,15 @@ title: My Portfolio
               This application was written using the new Javascript framework Meteor to help me/users study.
               %br/
               Click <a class="btn btn-default btn-lg" href="http://hippocampus.meteor.com" target="_blank" >here</a> to check it out!
+        .item
+          %img{ :src => "img/coffeeMaker-screenshot.png", :alt => "coffeeMaker App" }
+          .carousel-caption
+            %h1
+              CoffeeMaker
+            %p
+              This coffee simulator was written in Backbone.js for frontend MVC and Rack for Ruby backend.
+              %br/
+              Click <a class="btn btn-default btn-lg" href="https://github.com/D4L/coffeeMaker" target="_blank" >here</a> to download and try it out!
       %a.left.carousel-control{ :href => "#project-carousel", :data => { :slide => "prev" } }
         %span.glyphicon.glyphicon-chevron-left
       %a.right.carousel-control{ :href => "#project-carousel", :data => { :slide => "next" } }
