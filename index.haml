@@ -101,6 +101,7 @@ title: My Portfolio
       %ol.carousel-indicators
         %li.active{ :data => { :target => "project-carousel", "slide-to" => "0" } }
         %li{ :data => { :target => "project-carousel", "slide-to" => "1" } }
+        %li{ :data => { :target => "project-carousel", "slide-to" => "2" } }
       .carousel-inner
         .item.active
           %img{ :src => "img/hippocampus-screenshot.png", :alt => "Hippocampus App" }
@@ -120,6 +121,15 @@ title: My Portfolio
               This coffee simulator was written in Backbone.js for frontend MVC and Rack for Ruby backend.
               %br/
               Click <a class="btn btn-default btn-lg" href="https://github.com/D4L/coffeeMaker" target="_blank" >here</a> to download and try it out!
+        .item
+          %img{ :src => "img/abstractGraph-screenshot.png", :alt => "abstractGraph Gem" }
+          .carousel-caption
+            %h1
+              AbstractGraph
+            %p
+              This Ruby gem is a library that can be used to create graphs and perform simple graph related operations on them.
+              %br/
+              Click <a class="btn btn-default btn-lg" href="https://rubygems.org/gems/abstract_graph" target="_blank" >here</a> to get more details and try it out!
       %a.left.carousel-control{ :href => "#project-carousel", :data => { :slide => "prev" } }
         %span.glyphicon.glyphicon-chevron-left
       %a.right.carousel-control{ :href => "#project-carousel", :data => { :slide => "next" } }
