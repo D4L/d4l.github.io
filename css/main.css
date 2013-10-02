@@ -46,8 +46,12 @@ body {
 }
 
 .item {
-  height:             500px;
   width:              100%;
+  background-color:   white;
+}
+
+.item img {
+  -webkit-filter:     saturate(18%) brightness(64%);
 }
 
 #hello {
@@ -65,3 +69,24 @@ blockquote {
 blockquote small {
   color:              #444;
 }
+
+.carousel-indicators {
+  line-height:        0;
+  bottom:             30px;
+}
+
+.btn-primary {
+  background-color:   #383838;
+  border-color:       #2c2c2c;
+}
+
+.btn-primary:hover {
+  background-color:   #252525;
+  border-color:       #1f1f1f;
+}
+
+.btn-lg {
+  font-size:          20px;
+  padding:            5px 10px 7px;
+}
+
